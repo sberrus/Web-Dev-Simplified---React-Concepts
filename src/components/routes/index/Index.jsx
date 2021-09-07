@@ -3,8 +3,24 @@ import React from "react";
 const index = () => {
     const clases = [
         {
-            name: "StatevsProps",
+            name: "State vs Props",
             desc: "Comparación a fondo del manejo de States y de los Props",
+            url: "StateVsProps",
+        },
+        {
+            name: "State Hook",
+            desc: "Manejando información del componente de manera apropiada",
+            url: "StateHook",
+        },
+        {
+            name: "Memo Hook",
+            desc: "Manipulando información y optimizando información",
+            url: "MemoHook",
+        },
+        {
+            name: "Ref Hook",
+            desc: "Manipulando información y optimizando información",
+            url: "RefHook",
         },
     ];
     return (
@@ -15,15 +31,14 @@ const index = () => {
                 cursos pasados.
             </p>
             {clases.map((clase) => (
-                <div class="card text-center">
+                <div class="card text-start">
                     <div class="card-body">
                         <h5 class="card-title">{clase.name}</h5>
                         <p class="card-text">{clase.desc}</p>
-                        <a href={`/${clase.name}`} class="btn btn-primary">
-                            Algo
+                        <a href={`/${clase.url}`} class="btn btn-dark">
+                            Ver Clase
                         </a>
                     </div>
-                    <div class="card-footer text-muted">2 days ago</div>
                 </div>
             ))}
         </div>

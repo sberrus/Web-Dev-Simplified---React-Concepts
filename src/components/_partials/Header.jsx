@@ -5,13 +5,11 @@ const Header = () => {
     return (
         <div className="container-fluid p-0">
             <nav className="navbar navbar-dark bg-dark ">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                <div className="container">
+                    <a className="navbar-brand" href="/">
                         <img src={Logo} alt="" width="30" className="d-inline-block align-text-top" />
                     </a>
-                    <h5 href="#" className="float-end text-light">
-                        Web Dev Simplified - React a Fondo
-                    </h5>
+                    <h5 className="float-end text-light">Web Dev Simplified - React a Fondo</h5>
                 </div>
             </nav>
         </div>
