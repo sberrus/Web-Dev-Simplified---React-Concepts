@@ -22,6 +22,11 @@ const index = () => {
             desc: "Manipulando información y optimizando información",
             url: "RefHook",
         },
+        {
+            name: "Context Hook",
+            desc: "Enviando contexto a componentes hijos",
+            url: "ContextHook",
+        },
     ];
     return (
         <div className="container">
